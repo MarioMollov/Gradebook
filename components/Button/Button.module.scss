@@ -1,0 +1,27 @@
+@use "../../styles/colors";
+
+.button {
+  color: white;
+  background-color: green;
+  border: none;
+  height: 3rem;
+  width: fit-content;
+  padding: 0.5rem 1rem;
+  border-radius: 0.8rem;
+  cursor: pointer;
+
+  &:hover {
+    scale: 1.05;
+    box-shadow: 0.5rem 0.5rem 1rem rgb(black, 0.3);
+  }
+}
+
+.success {
+  background-color: colors.$green_deafult;
+}
+.error {
+  background-color: colors.$red_deafult;
+}
+.default {
+  background-color: colors.$blue_deafult;
+}

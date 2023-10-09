@@ -1,0 +1,47 @@
+.signInForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size: 1rem;
+  width: 20rem;
+  margin: 1rem 0;
+}
+
+.divider::after,
+.divider::before {
+  content: "";
+  border: 1px solid black;
+  flex: 1;
+}
+
+.divider:not(:empty)::before {
+  margin-right: 0.25em;
+}
+
+.divider:not(:empty)::after {
+  margin-left: 0.25em;
+}
+
+.google {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  font-size: 1.2rem;
+  background-color: #fff67f;
+  color: black;
+}
+
+.register {
+  margin-top: 1rem;
+}
